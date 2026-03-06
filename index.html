@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
    <head>
       <meta charset="utf-8">
-      <!--[if IE]>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <![endif]-->
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <meta name="description" content="">
-      <meta name="author" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+      <meta name="description" content="Arkangel ayuda a tu hijo a expresar sus emociones y a ti a entenderlas. Fortalece la conexión emocional de tu familia. Hecha en Ecuador.">
+      <meta name="author" content="Arkangel">
+      <meta name="theme-color" content="#34327C">
+      <!-- Open Graph -->
+      <meta property="og:title" content="Arkangel — Fortalece la conexión emocional con tu hijo">
+      <meta property="og:description" content="Tu hijo expresa sus emociones en la app. Tú recibes lo que siente. Juntos construyen una conexión más fuerte.">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="img/logoArk-13.png">
       <!-- Page title -->
-      <title>Arkangel</title>
-      <!--[if lt IE 9]>
-      <script src="js/respond.js"></script>
-      <![endif]-->
+      <title>Arkangel — Fortalece la conexión emocional con tu hijo</title>
       <!-- Bootstrap Core CSS -->
       <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
       <!-- Icon fonts -->
@@ -26,19 +26,16 @@
       <link href="css/style.css" rel="stylesheet">
       <!-- Color Style CSS -->
       <link href="styles/funtime.css" rel="stylesheet">
-      <!-- Owl Slider & Prettyphoto -->
+      <!-- Owl Carousel -->
       <link rel="stylesheet" href="css/owl.carousel.css">
-      <link rel="stylesheet" href="css/prettyPhoto.css">
-      <!-- LayerSlider stylesheet -->
-      <link rel="stylesheet" href="layerslider/css/layerslider.css">
-      <!-- Favicons-->
+      <!-- Favicons -->
       <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
       <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
    </head>
    <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-   <!-- Page width 'Boxed' of 'Full' -->
    <div class="full">
+
       <!-- Preloader -->
       <div id="preloader">
          <div class="preloader">
@@ -48,40 +45,59 @@
             <span></span>
             <span></span>
          </div>
-      </div>	   
+      </div>
+
       <!-- Navbar -->
       <nav class="navbar navbar-custom navbar-fixed-top">
-         <!-- Brand and toggle get grouped for better mobile display -->
          <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
             <i class="fa fa-bars"></i>
             </button>
             <div class="navbar-brand-centered page-scroll">
-               <a href="#page-top"><img src="img/logoArk-13.png"  alt=""></a>
+               <a href="#page-top"><img src="img/logoArk-13.png" alt="Arkangel"></a>
             </div>
          </div>
-		 
-         <!-- Collect the nav links, forms, and other content for toggling -->
          <div class="collapse navbar-collapse" id="navbar-brand-centered">
-		  <div class="container">
+            <div class="container">
                <ul class="nav navbar-nav page-scroll navbar-left">
-                  <li><a href="#services">Equipo</a></li>
-                  <li><a href="#callout">Descarga</a></li>
-                  
+                  <li><a href="#como-funciona">Cómo funciona</a></li>
+                  <li><a href="#beneficios">Beneficios</a></li>
                </ul>
                <ul class="nav navbar-nav page-scroll navbar-right">
-                  <li><a href="#about">Sobre la app</a></li>
-                  <li><a href="#contact">Opiniones</a></li>
+                  <li><a href="#testimonios">Opiniones</a></li>
+                  <li><a href="#acceso">Acceso anticipado</a></li>
                </ul>
-			  </div>
-			 </div>
-			 <!-- /.navbar-collapse -->
-		  </nav>
-		  <!-- /navbar ends -->
-	  
-      <!-- Slider -->
-    
-      <!-- Clouds SVG Divider -->
+            </div>
+         </div>
+      </nav>
+
+      <!-- ============================================
+           SECTION 1: HERO (Above the fold)
+           ============================================ -->
+      <section id="hero" class="hero-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 col-sm-12 hero-text">
+                  <span class="hero-trust-badge">
+                     <i class="fa fa-map-marker"></i> Hecha en Ecuador para familias ecuatorianas
+                  </span>
+                  <h1>Fortalece la conexión emocional con tu hijo</h1>
+                  <p class="hero-sub">
+                     Tu hijo expresa sus emociones en la app. Tú recibes lo que siente en tiempo real.
+                     Juntos construyen una conexión más fuerte.
+                  </p>
+                  <div class="page-scroll">
+                     <a class="btn btn-hero" href="#acceso">Quiero acceso anticipado</a>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 text-center">
+                  <img src="img/girl.png" alt="Padre e hijo conectados emocionalmente" class="img-responsive center-block hero-img" loading="lazy">
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Cloud Divider -->
       <div class="hidden-xs container-fluid cloud-divider">
          <svg id="deco-clouds1" class="head" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
             <path d="M-5 100 Q 0 20 5 100 Z
@@ -108,213 +124,235 @@
             </path>
          </svg>
       </div>
-      <!-- / section ends-->
-	  
-      <!-- Section Services -->
-      <section id="services" class="color-section">
-         <div class="container">
-            <div class="col-lg-8 col-lg-offset-2">
-               <!-- Section heading -->
-              
-            </div>
-            <div class="row">
-			<!-- main text -->
-               <div class="col-md-12 col-lg-5 text-center">
-                  <h3 class="text-center">Arkangeles</h3>
-                  <p>
-                     Todos tenemos algo que contar. Por eso nuestros arkangeles están listos para acompañarte en tu día a día.
-                     Ellos podrán darte un consejo, animarte o ayudarte a comunicar situaciones difíciles a la persona que más
-                     confías. Puedes elegir al que mejor te identifique. 
-                  </p>
-               </div>
-               <!-- /col-sm-12-->
-               <div class="col-md-12 col-lg-7">
-                  <!-- Image -->
-                  <img src="img/personajes-12.png" alt="" class="img-responsive center-block">
-               </div>
-               <!-- /col-md-12-->
-            </div>
-            <!-- /row -->
-           
-         </div>
-         <!-- /container-->
-      </section>
-      <!-- /Section ends -->
-	  
-      <!-- Section Callout -->
-      <section id="callout" class="small-section">
-         <!-- Clouds background -->
-         <div class="hidden-xs">
-			  <div class="cloud x1"></div>
-			  <div class="cloud x2"></div>
-			  <div class="cloud x3"></div>
-			  <div class="cloud x4"></div>
-			  <div class="cloud x5"></div>
-			  <div class="cloud x6"></div>
-			  <div class="cloud x7"></div>
-		</div>
-         <!-- /Clouds ends -->
-         <div class="container">
-            <!-- Animated Sun -->
-            <div class="sun hidden-sm hidden-xs">
-               <div class="sun-face">
-                  <div class="sun-hlight"></div>
-                  <div class="sun-leye"></div>
-                  <div class="sun-reye"></div>
-                  <div class="sun-lred"></div>
-                  <div class="sun-rred"></div>
-                  <div class="sun-smile"></div>
-               </div>
-               <!-- Sun rays -->
-               <div class="sun-anime">
-                  <div class="sun-ball"></div>
-                  <div class="sun-light"><b></b><s></s>
-                  </div>
-                  <div class="sun-light"><b></b><s></s>
-                  </div>
-                  <div class="sun-light"><b></b><s></s>
-                  </div>
-                  <div class="sun-light"><b></b><s></s>
-                  </div>
-                  <div class="sun-light"><b></b><s></s>
-                  </div>
-                  <div class="sun-light"><b></b><s></s>
-                  </div>
-                  <div class="sun-light"><b></b><s></s>
-                  </div>
-                  <div class="sun-light"><b></b><s></s>
-                  </div>
-                  <div class="sun-light"><b></b><s></s>
-                  </div>
-                  <div class="sun-light"><b></b><s></s>
-                  </div>
-                  <div class="sun-light"><b></b><s></s>
-                  </div>
-                  <div class="sun-light"><b></b><s></s>
-                  </div>
-               </div>
-            </div>
-            <!-- /Animated Sun -->
-            <div class="col-md-6 col-sm-6 text-center">
-			<div class="well">
-               <h3>Descarga nuestra App</h3>
-               <p>
-                     Una herramienta con la que podrás desahogarte, descubrir tu personalidad y explorar nuevas actividades o deportes.
-               </p>
-               <div class="page-scroll">
-                  <!-- Button-->
-                  <a class="btn" href="https://play.google.com/store/apps/details?id=com.arkangel.arkangel" target="_blank">Descargar</a>
-               </div>
-			   <!-- /page-scroll -->
-			  </div>
-			  <!-- /well -->
-            </div>
-            <!-- /col-md-6 -->
-         </div>
-         <!-- /container-->
-      </section>
-      <!-- Section Ends-->
-	  
-      <!-- Section About -->
-      <section id="about">
-         <div class="container">
-            <div class="col-lg-8 col-lg-offset-2">
-               <!-- Section heading -->
-               <div class="section-heading">
-                  <h2>Sobre la app</h2>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-sm-12 col-lg-4">
-                  <!-- Carousel -->
-                  <div class="owl">
-                     <div class="item">
-                        <img class="img-responsive" src="img/girl.png" alt="">
-                     </div>
-              
-                  </div>
-               </div>
-               <!-- text -->
-               <div class="col-lg-8 col-sm-12 text">
-                  <h3>Salud emocional</h3>
-                  <p>Entendemos la importancia de la salud emocional en los niños y jóvenes. Por eso creamos esta app para que ellos puedan comunicar sus problemas o identificar sus diferentes estados de ánimo. Es posible lograrlo junto con la ayuda de la persona que más confía el menor. 
-                  </p>
-                  <p>Arkangel es una aplicación móvil que ayuda a desarrollar una comunicación afectiva entre el joven y el tutor. Además invita a que el niño sepa cómo enfrentar los cambios de ánimo.
-                  </p>
-               </div>
-               <!-- /col-lg-8 -->
-            </div>
-            <!-- /row -->
-         </div>
-         <!--/container-->	  
-      </section>
-      <!--/ Section ends -->
-	  
-      <!-- Parallax object -->
-      <div class="parallax-object1 hidden-sm hidden-xs" data-0="opacity:1;"
-         data-100="transform:translatey(40%);"
-         data-center-center="transform:translatey(-180%);">
-         <!-- Image -->
-         <img src="img/parallaxobject1.png" alt="">
-      </div>
-	  
-     
-    
-	  
-	  
 
-	  
-      <!-- Section Contact -->
-      <section id="contact" class="color-section">
+      <!-- ============================================
+           SECTION 2: PROBLEM → BRIDGE → SOLUTION
+           ============================================ -->
+      <section id="problema" class="color-section">
          <div class="container">
+            <div class="row">
+               <div class="col-lg-8 col-lg-offset-2 text-center">
+                  <div class="problem-stat">
+                     <span class="stat-number">1 de cada 10</span>
+                     <span class="stat-text">niños enfrenta un desafío emocional, pero la mayoría no encuentra las palabras para pedir ayuda.</span>
+                  </div>
+                  <p class="problem-bridge">
+                     ¿Y si tu hijo pudiera <strong>mostrarte</strong> cómo se siente?
+                  </p>
+                  <p class="problem-solution">
+                     Arkangel le da a tu hijo una forma de expresar sus emociones — y a ti, la oportunidad de entenderlas.
+                  </p>
+                  <small class="stat-source">Fuente: Organización Mundial de la Salud, 2021</small>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- ============================================
+           SECTION 3: HOW IT WORKS (3 steps)
+           ============================================ -->
+      <section id="como-funciona">
+         <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+               <div class="section-heading">
+                  <h2>Cómo funciona</h2>
+               </div>
+            </div>
+            <div class="row steps-row">
+               <!-- Step 1 -->
+               <div class="col-md-4 col-sm-12 text-center">
+                  <div class="step-item">
+                     <div class="step-number">1</div>
+                     <div class="step-icon"><i class="fa fa-heart fa-3x"></i></div>
+                     <h4>Tu hijo se expresa</h4>
+                     <p>Elige un arkangel y muestra cómo se siente usando una interfaz visual — sin necesidad de escribir.</p>
+                  </div>
+               </div>
+               <!-- Step 2 -->
+               <div class="col-md-4 col-sm-12 text-center">
+                  <div class="step-item">
+                     <div class="step-number">2</div>
+                     <div class="step-icon"><i class="fa fa-mobile fa-3x"></i></div>
+                     <h4>Tú recibes lo que siente</h4>
+                     <p>Recibe en tiempo real las emociones de tu hijo, con contexto para entender qué está pasando.</p>
+                  </div>
+               </div>
+               <!-- Step 3 -->
+               <div class="col-md-4 col-sm-12 text-center">
+                  <div class="step-item">
+                     <div class="step-number">3</div>
+                     <div class="step-icon"><i class="fa fa-users fa-3x"></i></div>
+                     <h4>Se conectan juntos</h4>
+                     <p>Construyen una comunicación emocional más fuerte, día a día, como familia.</p>
+                  </div>
+               </div>
+            </div>
+            <!-- Characters image -->
+            <div class="row">
+               <div class="col-md-8 col-md-offset-2 text-center">
+                  <img src="img/personajes-12.png" alt="Arkangeles — personajes de la app" class="img-responsive center-block" loading="lazy" style="margin-top: 30px;">
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- ============================================
+           SECTION 4: BENEFITS (3 cards + mid-page CTA)
+           ============================================ -->
+      <section id="beneficios" class="color-section">
+         <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+               <div class="section-heading">
+                  <h2>Beneficios</h2>
+               </div>
+            </div>
+            <div class="row">
+               <!-- Benefit 1 -->
+               <div class="col-md-4 col-sm-12">
+                  <div class="benefit-card well text-center">
+                     <i class="fa fa-comments fa-3x"></i>
+                     <h4>Entiende</h4>
+                     <p>Lo que tu hijo no puede decir con palabras, lo expresa a través de sus arkangeles.</p>
+                  </div>
+               </div>
+               <!-- Benefit 2 -->
+               <div class="col-md-4 col-sm-12">
+                  <div class="benefit-card well text-center">
+                     <i class="fa fa-shield fa-3x"></i>
+                     <h4>Acompaña</h4>
+                     <p>Acompaña sus emociones desde cualquier lugar, en el momento que más te necesita.</p>
+                  </div>
+               </div>
+               <!-- Benefit 3 -->
+               <div class="col-md-4 col-sm-12">
+                  <div class="benefit-card well text-center">
+                     <i class="fa fa-handshake-o fa-3x"></i>
+                     <h4>Fortalece</h4>
+                     <p>Fortalece la confianza y comunicación emocional de toda tu familia.</p>
+                  </div>
+               </div>
+            </div>
+            <!-- Mid-page CTA -->
+            <div class="row">
+               <div class="col-md-6 col-md-offset-3 text-center" style="margin-top: 30px;">
+                  <div class="page-scroll">
+                     <a class="btn" href="#acceso">Únete a la lista de acceso anticipado</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- ============================================
+           SECTION 5: TRUST + TESTIMONIALS
+           ============================================ -->
+      <section id="testimonios">
+         <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+               <div class="section-heading">
+                  <h2>Opiniones</h2>
+               </div>
+            </div>
+
+            <!-- Testimonials Carousel -->
             <div class="col-lg-12 col-sm-12 paper_block">
-               <h3 class="text-center">Opiniones de padres</h3>
+               <h3 class="text-center">Lo que dicen los padres</h3>
                <div id="owl-testimonials">
-                  <!-- testimonial 1-->
+                  <!-- Testimonial 1 -->
                   <blockquote>
                      <div class="col-md-6 col-lg-6 col-centered">
-                        <!-- testimonial image-->
-                        <img src="img/mrs.jpg" alt="" class="img-responsive img-circle">
+                        <img src="img/mrs.jpg" alt="Sandra Vera" class="img-responsive img-circle">
                      </div>
                      <div class="col-md-10 col-md-offset-1 quote-test">
-                        <!-- quote -->
-                        <p>Ahora sé cuando mi nieta está triste o tiene algún problema. La aplicación me ayuda a
-                        abordar temas difíciles.</p>
-                        <small><i class="fa fa-user"></i>Sandra Vera</small>
+                        <p>Ahora sé cuando mi nieta está triste o tiene algún problema. La aplicación me ayuda a abordar temas difíciles.</p>
+                        <small><i class="fa fa-user"></i> Sandra Vera</small>
                      </div>
                   </blockquote>
-                  <!-- testimonial 2-->
-                    <blockquote>
+                  <!-- Testimonial 2 -->
+                  <blockquote>
                      <div class="col-md-6 col-lg-6 col-centered">
-                        <!-- testimonial image-->
-                        <img src="img/sr.jpg" alt="" class="img-responsive img-circle">
+                        <img src="img/sr.jpg" alt="Carlos Grunauer" class="img-responsive img-circle">
                      </div>
                      <div class="col-md-10 col-md-offset-1 quote-test">
-                        <!-- quote -->
-                        <p>Desde que uso la app, me comunico mejor con mi hijo. Arkangel también me deja saber cuando él
-                        obtiene un nuevo logro. </p>
-                        <small><i class="fa fa-user"></i>Carlos Grunauer </small>
+                        <p>Desde que uso la app, me comunico mejor con mi hijo. Arkangel también me deja saber cuando él obtiene un nuevo logro.</p>
+                        <small><i class="fa fa-user"></i> Carlos Grunauer</small>
                      </div>
                   </blockquote>
                </div>
-               <!--owl testimonials-->
             </div>
-            <!-- /col-lg-7 -->
-            <!-- Contact -->
 
-                  <!-- address info -->
-     
+            <!-- Trust Signals -->
+            <div class="row" style="margin-top: 40px;">
+               <div class="col-md-4 col-sm-12 text-center">
+                  <div class="trust-signal">
+                     <i class="fa fa-lock fa-2x"></i>
+                     <p><strong>Datos protegidos</strong><br>La privacidad de tu familia es nuestra prioridad.</p>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-12 text-center">
+                  <div class="trust-signal">
+                     <i class="fa fa-child fa-2x"></i>
+                     <p><strong>Diseñada para familias</strong><br>Interfaz segura y apropiada para niños.</p>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-12 text-center">
+                  <div class="trust-signal">
+                     <i class="fa fa-map-marker fa-2x"></i>
+                     <p><strong>Hecha en Ecuador</strong><br>Creada por un equipo que entiende a las familias ecuatorianas.</p>
+                  </div>
+               </div>
+            </div>
 
-         
-            <!--/Contact form -->
+            <!-- Disclaimer -->
+            <div class="row">
+               <div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 20px;">
+                  <p class="disclaimer">
+                     <i class="fa fa-info-circle"></i>
+                     Arkangel es una herramienta de comunicación familiar, no un sustituto de atención profesional.
+                  </p>
+               </div>
+            </div>
          </div>
-         <!-- /container-->
       </section>
-      <!--Section ends -->
-	  
-      <!-- Footer -->	
+
+      <!-- ============================================
+           SECTION 6: FINAL CTA + FOOTER
+           ============================================ -->
+      <section id="acceso" class="color-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8 col-md-offset-2 text-center">
+                  <h3>Sé de los primeros en probarlo</h3>
+                  <p>Déjanos tu email y te avisamos cuando Arkangel esté lista. Sin spam, solo novedades importantes.</p>
+
+                  <!-- Email Signup Form -->
+                  <form id="signup-form" class="signup-form" action="#" method="POST">
+                     <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Tu email" required aria-label="Email para acceso anticipado">
+                        <span class="input-group-btn">
+                           <button class="btn" type="submit">Quiero acceso anticipado</button>
+                        </span>
+                     </div>
+                     <p class="form-error" style="display:none; color:#d12881; margin-top:8px;"></p>
+                  </form>
+
+                  <!-- WhatsApp Share -->
+                  <div class="whatsapp-share" style="margin-top: 24px;">
+                     <p>¿Conoces a alguien que le interese?</p>
+                     <a href="https://wa.me/?text=Encontr%C3%A9%20esta%20app%20que%20ayuda%20a%20los%20ni%C3%B1os%20a%20expresar%20sus%20emociones%20a%20sus%20padres.%20Se%20llama%20Arkangel%20%F0%9F%92%9C%20https%3A%2F%2Farkangel-app.github.io"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-whatsapp">
+                        <i class="fa fa-whatsapp"></i> Comparte con un familiar
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Cloud Divider -->
       <div class="container-fluid cloud-divider">
-         <!-- Clouds SVG Divider -->	
          <svg id="deco-clouds" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
             <path d="M-5 100 Q 0 20 5 100 Z
                M0 100 Q 5 0 10 100
@@ -340,40 +378,35 @@
             </path>
          </svg>
       </div>
+
+      <!-- Footer -->
       <footer>
-         <div class="poltics"><a class="link" href="politics.html">Políticas de privacidad</a></div>
-         <!-- / container -->
-         <hr>
-         <p>Copyright © 2020 - Arkangel</p>
-         <!-- /container -->
-         <!-- Go To Top Link -->
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12 text-center">
+                  <p class="footer-sources">
+                     Fuentes: <a href="https://www.who.int/news-room/fact-sheets/detail/mental-health-strengthening-our-response" target="_blank" rel="noopener">OMS, 2021</a>
+                  </p>
+                  <div class="poltics"><a class="link" href="politics.html">Políticas de privacidad</a></div>
+                  <p class="footer-contact"><i class="fa fa-envelope"></i> contacto@arkangel-app.com</p>
+                  <hr>
+                  <p>Copyright &copy; 2025 — Arkangel</p>
+               </div>
+            </div>
+         </div>
          <div class="page-scroll hidden-sm hidden-xs">
             <a href="#page-top" class="back-to-top"><i class="fa fa-angle-up"></i></a>
          </div>
       </footer>
-      <!-- /footer ends -->
-	  </div> <!-- /page width -->
-      <!-- Core JavaScript Files -->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <!-- Google maps -->
-      <script src="https://maps.googleapis.com/maps/api/js?v=3"></script>
-      <!-- Main Js -->
-      <script src="js/main.js"></script>
-      <!-- Isotope -->	  
-      <script src="js/jquery.isotope.js"></script>
-      <!--Mail Chimp validator -->
-      <script src='js/mc-validate.js'></script>
-      <!--Other Plugins -->
-      <script src="js/plugins.js"></script>
-	  <!-- Contact -->
-      <script src="js/contact.js"></script>
-      <!-- Prefix free CSS -->
-      <script src="js/prefixfree.js"></script>	  	  
-      <!-- GreenSock -->
-      <script src="layerslider/js/greensock.js" type="text/javascript"></script>
-      <!-- LayerSlider script files -->
-      <script src="layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
-      <script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+
+   </div>
+
+   <!-- Core JavaScript -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <!-- Main JS -->
+   <script src="js/main.js"></script>
+   <!-- Owl Carousel (testimonials) -->
+   <script src="js/plugins.js"></script>
    </body>
 </html>

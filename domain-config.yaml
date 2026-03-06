@@ -1,0 +1,211 @@
+# =============================================================================
+# DOMAIN CONFIGURATION — Arkangel
+# =============================================================================
+# This file is the single source of truth for all agents, subagents, and skills.
+# Every agent MUST read this file before beginning work.
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# PRODUCT IDENTITY
+# -----------------------------------------------------------------------------
+product:
+  name: "Arkangel"
+  tagline: "Fortalece la conexión emocional con tu hijo"
+  description: "Arkangel es una app de comunicación emocional familiar. Los niños expresan sus emociones a través de la app, y los padres reciben lo que sienten en tiempo real. Juntos construyen una conexión más fuerte."
+  stage: "mvp"
+  repository: "https://github.com/SedaoAwana/arkangel-app"
+  license: "proprietary"
+
+# -----------------------------------------------------------------------------
+# PROBLEM & SOLUTION
+# -----------------------------------------------------------------------------
+problem:
+  statement: "1 de cada 10 niños enfrenta un desafío emocional, pero la mayoría no encuentra las palabras para pedir ayuda. Los padres quieren ayudar pero no saben qué siente su hijo."
+  current_alternatives:
+    - "Terapia infantil presencial (cara, estigmatizada en Ecuador)"
+    - "Apps de meditación para niños (Moshi, Headspace — contenido unidireccional, sin conexión padre-hijo)"
+    - "Brightline/Little Otter (conectan con terapeutas, no con padres)"
+    - "Hablar directamente (los niños no siempre tienen las palabras)"
+  why_now: "La salud mental infantil post-pandemia está en crisis. Ecuador registró 15,521 hospitalizaciones pediátricas por salud mental entre 2015-2022. Los padres buscan herramientas proactivas, no reactivas."
+
+solution:
+  approach: "Modelo de doble usuario: el niño expresa emociones en la app usando personajes (arkangeles), y el padre/tutor recibe esas emociones en tiempo real. La app facilita la conversación, no la reemplaza."
+  key_differentiator: "Ningún competidor conecta directamente al niño con su padre a través de comunicación emocional. Brightline y Little Otter conectan con terapeutas. Moshi y Headspace entregan contenido al niño solo."
+  unfair_advantage: "Profundo entendimiento cultural de familismo ecuatoriano. Posicionamiento como fortalecimiento familiar, no tratamiento de salud mental."
+
+# -----------------------------------------------------------------------------
+# TARGET USERS
+# -----------------------------------------------------------------------------
+users:
+  primary_persona:
+    name: "La Mamá Protectora"
+    description: "Madre ecuatoriana de 28-45 años, con hijos de 5-12 años. Usa Android, WhatsApp como canal principal de comunicación. Valora profundamente la conexión familiar (familismo). Preocupada por el bienestar emocional de su hijo pero no usaría una app que diga 'salud mental' por estigma social."
+    pain_points:
+      - "No sabe qué siente su hijo cuando no habla"
+      - "Le cuesta abordar temas emocionales difíciles"
+      - "No quiere que su familia sea vista como 'con problemas'"
+      - "Las opciones de terapia son caras o inaccesibles"
+    goals:
+      - "Entender las emociones de su hijo"
+      - "Fortalecer la comunicación familiar"
+      - "Ser una mamá/papá más presente emocionalmente"
+      - "Prevenir problemas emocionales antes de que escalen"
+    tech_comfort: "beginner"
+  secondary_personas:
+    - name: "El Niño Expresivo"
+      description: "Niño/a de 5-12 años que usa la app para expresar cómo se siente a través de personajes (arkangeles). No necesita escribir — elige emociones visualmente."
+      pain_points:
+        - "No tiene palabras para lo que siente"
+        - "Le da vergüenza hablar de emociones"
+        - "No sabe cómo pedir ayuda"
+      goals:
+        - "Sentirse escuchado"
+        - "Comunicar emociones sin miedo"
+        - "Conectar con su papá/mamá/tutor"
+      tech_comfort: "beginner"
+
+# -----------------------------------------------------------------------------
+# CORE FEATURES (MVP)
+# -----------------------------------------------------------------------------
+features:
+  mvp:
+    - name: "Pre-launch Landing Page"
+      description: "Página de acceso anticipado con signup de email, WhatsApp share, y propuesta de valor clara del modelo doble-usuario"
+      priority: "p0"
+      ai_powered: false
+    - name: "Expresión Emocional del Niño"
+      description: "El niño selecciona un arkangel y expresa su emoción actual usando interfaz visual (no texto)"
+      priority: "p0"
+      ai_powered: false
+    - name: "Notificación al Padre/Tutor"
+      description: "El padre recibe en tiempo real lo que su hijo expresó, con contexto y sugerencias de cómo abordar la conversación"
+      priority: "p0"
+      ai_powered: false
+    - name: "Perfil Familiar"
+      description: "Configuración de la relación niño-tutor, con vinculación de cuentas"
+      priority: "p0"
+      ai_powered: false
+  future:
+    - name: "Historial Emocional"
+      description: "Dashboard para el padre mostrando patrones emocionales del niño a lo largo del tiempo"
+      priority: "p1"
+    - name: "Actividades Guiadas"
+      description: "Ejercicios de comunicación emocional para hacer juntos padre e hijo"
+      priority: "p1"
+    - name: "Contenido Educativo para Padres"
+      description: "Tips y artículos sobre comunicación emocional infantil"
+      priority: "p2"
+
+# -----------------------------------------------------------------------------
+# TECHNICAL ARCHITECTURE
+# -----------------------------------------------------------------------------
+tech:
+  frontend:
+    framework: "Static HTML/CSS/JS (landing page) → Flutter (app, future)"
+    styling: "Bootstrap 3 + custom CSS (existing theme)"
+    state_management: "N/A for landing page"
+    design_direction: "Warm, child-friendly, family-oriented. Colors: deep blue (#34327C), orange (#FF9400), cream (#F3F0CF)"
+  backend:
+    framework: "GitHub Pages (static hosting for landing page)"
+    language: "HTML/CSS/JavaScript"
+    api_style: "N/A for landing page"
+  database:
+    primary: "N/A for landing page"
+    orm: "N/A"
+    cache: "N/A"
+  infrastructure:
+    hosting: "GitHub Pages"
+    ci_cd: "GitHub Pages auto-deploy from master branch"
+    containerized: false
+    monitoring: "N/A"
+  ai:
+    enabled: false
+    models: []
+    features: []
+
+# -----------------------------------------------------------------------------
+# INTEGRATIONS & EXTERNAL SERVICES
+# -----------------------------------------------------------------------------
+integrations:
+  - name: "Mailchimp"
+    purpose: "Email signup collection for pre-launch waitlist"
+    type: "api"
+    documentation_url: "https://mailchimp.com/developer/"
+    auth_method: "api_key"
+  - name: "WhatsApp Share API"
+    purpose: "Viral sharing via WhatsApp (wa.me deep links)"
+    type: "api"
+    documentation_url: "https://faq.whatsapp.com/5913398998672934"
+    auth_method: "none"
+
+# -----------------------------------------------------------------------------
+# BUSINESS MODEL
+# -----------------------------------------------------------------------------
+business:
+  model: "freemium"
+  pricing_tiers:
+    - name: "Gratis"
+      price: 0
+      features: ["Expresión emocional básica", "1 niño vinculado", "Notificaciones al tutor"]
+    - name: "Familia"
+      price: 4.99
+      billing: "monthly"
+      features: ["Múltiples niños", "Historial emocional", "Actividades guiadas", "Contenido educativo"]
+  revenue_targets:
+    month_1: "500 signups en waitlist"
+    month_6: "2,000 usuarios activos, 100 suscriptores Familia"
+    month_12: "10,000 usuarios activos, 500 suscriptores Familia"
+  key_metrics:
+    - "Signups en waitlist (pre-launch)"
+    - "WhatsApp shares por usuario"
+    - "Expresiones emocionales por niño por semana"
+    - "Tasa de apertura de notificaciones por padres"
+    - "Conversión gratis → Familia"
+
+# -----------------------------------------------------------------------------
+# GO-TO-MARKET
+# -----------------------------------------------------------------------------
+launch:
+  target_date: "2026-Q2"
+  channels:
+    - "WhatsApp (viral sharing — 71%+ penetración en Ecuador)"
+    - "Facebook/Instagram (grupos de mamás ecuatorianas)"
+    - "Escuelas y colegios en Ecuador"
+    - "Psicólogos infantiles ecuatorianos (endorsements)"
+    - "UNICEF Ecuador school counseling alignment"
+  pre_launch:
+    landing_page: true
+    waitlist: true
+    beta_testers: 50
+  content_plan:
+    - "Blog: ¿Cómo saber qué siente tu hijo cuando no habla?"
+    - "Video: La importancia de la conexión emocional en familia"
+    - "Infografía: 5 señales de que tu hijo necesita ser escuchado"
+
+# -----------------------------------------------------------------------------
+# TEAM & ROLES
+# -----------------------------------------------------------------------------
+team:
+  human_roles:
+    - name: "Sedao"
+      role: "Founder / CEO"
+  agent_overrides: {}
+
+# -----------------------------------------------------------------------------
+# CONSTRAINTS & PREFERENCES
+# -----------------------------------------------------------------------------
+constraints:
+  budget: "$0-20/month infrastructure (GitHub Pages is free)"
+  timeline: "Landing page: 1 week. MVP app: 8-12 weeks"
+  geographic_focus: "Ecuador"
+  language_support: ["es"]
+  accessibility: "wcag-aa"
+  mobile_first: true
+  cultural_constraints:
+    - "NEVER use 'trastorno mental', 'diagnóstico', or 'terapia' in user-facing copy"
+    - "Frame everything as family connection, not mental health treatment"
+    - "Use 'bienestar emocional', 'conexión familiar', 'comunicación emocional' instead"
+    - "Android-first (75.9% market share in Ecuador)"
+    - "Page must load under 3 seconds on 4G"
+    - "Total page weight under 1MB"
+    - "44px minimum touch targets for mobile"

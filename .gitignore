@@ -1,0 +1,11 @@
+# AI agent framework (startup-launch-pad)
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~

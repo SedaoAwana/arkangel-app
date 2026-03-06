@@ -161,5 +161,285 @@ section.color-section,
 	stroke: #F3F0CF;
 }
 
+/* ============================================
+   Arkangel Pre-Launch Landing Page Styles
+   ============================================ */
 
- 
+/* --- Hero Section --- */
+.hero-section {
+	padding: 140px 0 80px;
+	background: #fff;
+}
+.hero-text {
+	padding-top: 40px;
+}
+.hero-trust-badge {
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 700;
+	color: #34327C;
+	background: #F3F0CF;
+	padding: 6px 16px;
+	border-radius: 20px;
+	margin-bottom: 16px;
+	letter-spacing: 0.02em;
+}
+.hero-sub {
+	font-size: 18px;
+	line-height: 30px;
+	color: #555;
+	margin-bottom: 24px;
+}
+.btn-hero {
+	font-size: 1.4rem;
+	padding: 14px 32px;
+	min-height: 48px;
+}
+.hero-img {
+	max-width: 400px;
+	margin-top: 20px;
+}
+
+/* --- Problem Section --- */
+.problem-stat {
+	margin-bottom: 24px;
+}
+.stat-number {
+	display: block;
+	font-family: 'Alegreya Sans', serif;
+	font-size: 48px;
+	font-weight: 900;
+	color: #34327C;
+	line-height: 1.1;
+	margin-bottom: 8px;
+}
+.stat-text {
+	display: block;
+	font-size: 18px;
+	line-height: 28px;
+	color: #555;
+}
+.problem-bridge {
+	font-size: 24px;
+	font-weight: 700;
+	color: #34327C;
+	margin: 24px 0 16px;
+	line-height: 1.3;
+}
+.problem-solution {
+	font-size: 17px;
+	line-height: 28px;
+	color: #555;
+	margin-bottom: 16px;
+}
+.stat-source {
+	display: block;
+	font-size: 12px;
+	color: #999;
+	margin-top: 8px;
+}
+
+/* --- Steps Section --- */
+.steps-row {
+	margin-top: 20px;
+}
+.step-item {
+	padding: 24px 16px;
+	margin-bottom: 24px;
+	position: relative;
+}
+.step-number {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	background: #FF9400;
+	color: #fff;
+	font-family: 'Alegreya Sans', serif;
+	font-size: 22px;
+	font-weight: 800;
+	margin-bottom: 12px;
+}
+.step-icon {
+	margin: 12px 0 16px;
+	color: #34327C;
+}
+.step-icon .fa {
+	color: #34327C;
+}
+.step-item h4 {
+	font-size: 24px;
+	margin-bottom: 8px;
+}
+.step-item p {
+	font-size: 15px;
+	line-height: 24px;
+	color: #666;
+}
+
+/* --- Benefits Section --- */
+.benefit-card {
+	padding: 32px 20px;
+	margin-bottom: 24px;
+	min-height: 220px;
+}
+.benefit-card .fa {
+	color: #34327C;
+	margin-bottom: 16px;
+}
+.benefit-card h4 {
+	font-size: 26px;
+	margin-bottom: 8px;
+}
+.benefit-card p {
+	font-size: 15px;
+	line-height: 24px;
+	color: #666;
+}
+
+/* --- Trust Signals --- */
+.trust-signal {
+	padding: 20px 16px;
+	margin-bottom: 16px;
+}
+.trust-signal .fa {
+	color: #34327C;
+	margin-bottom: 8px;
+}
+.trust-signal p {
+	font-size: 14px;
+	line-height: 22px;
+	color: #555;
+}
+.disclaimer {
+	font-size: 13px;
+	color: #888;
+	font-style: italic;
+	padding: 12px;
+	background: rgba(0,0,0,0.03);
+	border-radius: 8px;
+}
+.disclaimer .fa {
+	margin-right: 4px;
+	color: #999;
+}
+
+/* --- Signup Form --- */
+.signup-form {
+	max-width: 480px;
+	margin: 24px auto 0;
+}
+.signup-form .form-control {
+	min-height: 48px;
+	font-size: 16px;
+}
+.signup-form .btn {
+	min-height: 48px;
+	white-space: nowrap;
+}
+
+/* --- WhatsApp Button --- */
+.btn-whatsapp {
+	background-color: #25D366 !important;
+	border-color: #25D366 !important;
+	color: #fff !important;
+	font-size: 1.2rem;
+	padding: 12px 24px;
+	min-height: 48px;
+}
+.btn-whatsapp:hover,
+.btn-whatsapp:focus {
+	background-color: #1da851 !important;
+	border-color: #1da851 !important;
+	color: #fff !important;
+}
+.btn-whatsapp .fa {
+	margin-right: 6px;
+	font-size: 1.4rem;
+}
+
+/* --- Footer extras --- */
+.footer-sources {
+	font-size: 12px;
+	color: #aaa;
+	margin-bottom: 8px;
+}
+.footer-sources a {
+	color: #ccc;
+	text-decoration: underline;
+}
+.footer-contact {
+	font-size: 14px;
+	margin: 8px 0;
+}
+
+/* --- Mobile Responsive --- */
+@media (max-width: 767px) {
+	.hero-section {
+		padding: 100px 0 40px;
+		text-align: center;
+	}
+	.hero-text {
+		padding-top: 10px;
+	}
+	.hero-img {
+		max-width: 260px;
+		margin-top: 24px;
+	}
+	h1 {
+		font-size: 28px !important;
+		line-height: 34px !important;
+	}
+	.stat-number {
+		font-size: 36px;
+	}
+	.problem-bridge {
+		font-size: 20px;
+	}
+	.step-item h4 {
+		font-size: 20px;
+	}
+	.benefit-card {
+		min-height: auto;
+	}
+	.signup-form .input-group {
+		display: block;
+	}
+	.signup-form .input-group .form-control {
+		display: block;
+		width: 100%;
+		border-radius: 10px;
+		margin-bottom: 12px;
+	}
+	.signup-form .input-group .input-group-btn {
+		display: block;
+		width: 100%;
+	}
+	.signup-form .input-group .input-group-btn .btn {
+		display: block;
+		width: 100%;
+		border-radius: 10px;
+	}
+}
+
+@media (max-width: 480px) {
+	.hero-section {
+		padding: 90px 0 30px;
+	}
+	h1 {
+		font-size: 24px !important;
+		line-height: 30px !important;
+	}
+	.hero-sub {
+		font-size: 15px;
+		line-height: 24px;
+	}
+	.stat-number {
+		font-size: 30px;
+	}
+	h3 {
+		font-size: 28px;
+	}
+}
+
