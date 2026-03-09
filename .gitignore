@@ -1,5 +1,10 @@
-# AI agent framework (startup-launch-pad)
-.claude/
+# AI agent framework — share team config, ignore runtime/local state
+.claude/*
+!.claude/settings.json
+!.claude/commands/
+!.claude/agents/
+.claude/agent-memory-local/
+.claude/worktrees/
 
 # OS files
 .DS_Store
